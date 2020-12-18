@@ -1,50 +1,59 @@
 body{
     background: #0d1321;
-    margin: 0;
+    background-size: auto;
+    margin: auto;
     font-family: 'Poppins', sans-serif;
 }
-header {
+.header{
     background-color: #f9f4f5;
+}
+.logo-brand{
+    width:50%
 }
 .logo{
     margin: 30px;
+    padding-left: 35px;
+    width:130px;
+    height: 120px;
 }
 .brand-name{
-    margin: 50px;
-    font-size: 50px;
+    font-size: 65px;
     font-family: 'Carter One', cursive;
+    float: right;
+    padding-right: 150px;
 }
-header h1{
+.header h1{
     color: red;
 }
-header{
+.header{
     display: flex;
 }
-header ul{
+.navigation-bar{
+    width:50%
+}
+.header ul{
     margin: 30px;
     margin-top: 60px;
     position: absolute;
     right: 2%;
 }
-header ul li{
+.header ul li{
     float: left;
     margin: 10px;
     padding: 10px;
     list-style: none;
     background: #0d1321;
 }
-header ul li a{
+.header ul li a{
     text-decoration: none;
     color: #f9f4f5;
 }
-header ul li.active{
+ul li.active{
     background: #ed1c24;
 }
-p{
-    color: #ed1c24;
-}
 
-section{
+
+.section1{
     height: 665px;
     margin: 0px;
     background: url(photos/image1.jpg);
@@ -52,7 +61,7 @@ section{
     background-repeat: no-repeat;
     background-position: center;
 }
-section h1{
+.section1-head{
     text-align: center;
     color: #f9f4f5;
     padding-top: 175px;
@@ -63,26 +72,21 @@ section h1{
     -webkit-text-stroke-color: black;
 
 }
-section ul{
 
-    margin-top: -50px;
-    position: absolute;
-    right: 40%;
-    }
-section ul li{
-    float: left;
+.section-button{
+    position: relative;
+    left: 700px;
+    width: 200px;
+    height: 50px;
+    background: crimson;
+    color: white;
+    border: none;
+    margin: 20px auto;
     text-align: center;
-    margin:20px;
-    padding: 20px;
-    list-style: none;
-    background: #ed1c24;
-    }
-section ul li a{
-    text-decoration: none;
-    color: #f9f4f5;
-    }
+}
+
 .section2{
-    height: 665px;
+    height: 850px;
     margin: 0px;
     background: #8894aa;
     background-size: cover;
@@ -97,14 +101,64 @@ section ul li a{
     font-size: 80px;
     font-family: 'Carter One', cursive;
     }
-.aboutusmatter{
+p.aboutusmatter{
     text-align: center;
-    margin: -30px;
-    font-size: 30px;
+    padding-bottom: 20px;
+    margin: -40px;
+    font-size: 25px;
     list-style: none;
-
-}    
+    color: #ed1c24;
+    width:max-content;
+    padding-left: 330px;
     
 
+}    
+.newproducthead{
+    text-align: center;
+    color: #ed1c24;
+    padding-top: 40px;
+    margin-top: 0px;
+    font-size: 50px;
+    font-family: 'Carter One', cursive;
+    text-decoration: underline
+}
+.videointro{
+    margin-left: 32%;
+    margin-top: -48px;
+}
+.footer{
+    background-color: #f9f4f5;
+    height: 200px;
 
+}
+.footer-left{
+    width: 46%;
+    height: 190px;
+    padding-left:40px;
+    padding-top: 10px;
+    float: left;
+    
+}
+#location-head{
+    color: #0d1321;
+    text-decoration-line: underline;
+}
+.footer-right{
+    float: left;
+    width: 49%;
+    height: 190px;
+    padding-left:40px;
+    padding-top: 10px;
+    margin:0;
+
+}
+#contact_details-head{
+    color: #0d1321;
+    text-decoration-line: underline;
+}
+#creation-box{
+    font-size: 20px;
+    color: #f9f4f5;
+    text-align: center;
+}
 

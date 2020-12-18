@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>J Chef</title>
     <link rel="icon" href="C:\xampp\htdocs\jchef\photos\Layer 0.png" type="image/gif" sizes="16*16">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img class="logo" src="photos/Layer 0.png" alt="logo" height="100px">
-        <h1 class="brand-name">JChef</h1>
-        <ul>
+    <div class="header">
+        <div class="logo-brand">
+            <img class="logo" src="photos/Layer 0.png" alt="logo" height="120px">
+            <h1 class="brand-name">JChef</h1>
+        </div>
+        <div class="navigation-bar">
+            <ul>
             <li class="active"><a href="">Home</a></li>
             <li><a href="" >Gallery</a></li>
             <li><a href="" >About Us</a></li>
             <li><a href="" >Contact Us</a></li>
-        </ul>
+            </ul>
+        </div>    
         
-    </header>
-    <section>
-        <h1>Baked With Love</h1>
-        <ul>
-           <li><a href="">Bakery</a></li>
-           <li><a href="">Event Mangement</a></li>
-        </ul>
-
-    </section>
-    <section class="section2">
+    </div>
+    <div class="section1">
+        <h1 class="section1-head">Baked With Love</h1>
+       <div style="float: left;">
+        <button class ="section-button" type="button">Bakery</button>
+        <button class ="section-button" type="button">Event Management</button>
+       </div> 
+    </div>
+    <div class="section2">
         <h2 class="sect2head">About Us </h2> 
         <p class="aboutusmatter">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <h2>Our New Product</h2>    
-        <img src="photos/image2.jpg" alt="logo" height="100px"> 
-        <img src="photos/image3.jpg" alt="logo" height="100px"> 
-    </section2>
-    <footer>
-        <h3>Created By J_Chef</h3>
-    </footer>
-    
-
-
+        <h2 class="newproducthead">Our Latest Event</h2>    
+            <iframe class="videointro" width="650" height="415"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+            <img src="photos/image2.jpg" alt="logo" height="100px"> 
+            <img src="photos/image3.jpg" alt="logo" height="100px"> 
        
-    
+    </section2>
+    <div class="footer">
+        <div class="footer-left">
+            <h1 id="location-head">Location</h1>
+            <p>Thekke Edavoor<br>Naduvatom p.o <br> Pallipad Haripad</p>
+        </div>
+        <div class="footer-right">
+            <h1 id="contact_details-head">Contact Us</h1>
+            <p>9946523023</p>
+        </div>
+        <div>
+            <p id="creation-box">Copyrights©2020 Created By Creative-eye Creations</p>
 
-    
-    
+        </div>
+        
+    </div>
+     
   </body>
 </html>
