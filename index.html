@@ -2,63 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <title>J Chef</title>
-    <link rel="icon" href="C:\xampp\htdocs\jchef\photos\Layer 0.png" type="image/gif" sizes="16*16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J Chef|Welcome </title>
     <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="icon" href="C:\xampp\htdocs\jchef\photos\Layer 0.png" type="image/gif" sizes="16*16">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <div class="header">
-        <div class="logo-brand">
-            <img class="logo" src="photos/Layer 0.png" alt="logo" height="120px">
-            <h1 class="brand-name">JChef</h1>
-        </div>
-        <div class="navigation-bar">
-            <ul>
-            <li class="active"><a href="">Home</a></li>
-            <li><a href="" >Gallery</a></li>
-            <li><a href="" >About Us</a></li>
-            <li><a href="" >Contact Us</a></li>
-            </ul>
+   <header>
+       <div class="container">
+            <div id="branding">
+                <img src="photos/Layer 0.png" alt="logo" height="120px">
+                <h1>JChef</h1>
+                
+            </div> 
+            <nav>
+                <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="" >Gallery</a></li>
+                    <li><a href="" >About Us</a></li>
+                    <li><a href="" >Contact Us</a></li>
+                </ul>
+            </nav>
         </div>    
-        
-    </div>
-    <div class="section1">
-        <h1 class="section1-head">Baked With Love</h1>
-       <div style="float: left;">
-        <button class ="section-button" type="button">Bakery</button>
-        <button class ="section-button" type="button">Event Management</button>
-       </div> 
-    </div>
-    <div class="section2">
-        <h2 class="sect2head">About Us </h2> 
-        <p class="aboutusmatter">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <h2 class="newproducthead">Our Latest Event</h2>    
-            <iframe class="videointro" width="650" height="415"
-                src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
-            <img src="photos/image2.jpg" alt="logo" height="100px"> 
-            <img src="photos/image3.jpg" alt="logo" height="100px"> 
-       
-    </section2>
-    <div class="footer">
-        <div class="footer-left">
-            <h1 id="location-head">Location</h1>
-            <p>Thekke Edavoor<br>Naduvatom p.o <br> Pallipad Haripad</p>
-        </div>
-        <div class="footer-right">
-            <h1 id="contact_details-head">Contact Us</h1>
-            <p>9946523023</p>
-        </div>
-        <div>
-            <p id="creation-box">Copyrights©2020 Created By Creative-eye Creations</p>
+   </header> 
 
+
+   <section id="showcase">
+        <div class="container">
+            <h1>Baked With Love</h1>
+            <button type="button">Bakery</button>
+            <button type="button">Event Management</button>
         </div>
-        
-    </div>
-     
-  </body>
+   </section>
+
+
+   <section id="aboutus">
+       <div class="container">
+           <h2>About Us</h2>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+           <h2>Our Latest Event</h2>
+           <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="photos\image1.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="photos\image2.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+            
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="photos\image3.jpg" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+            
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+        </div>
+   </section>
+
+
+   <footer>
+       <p>Creative eye web design, Copyright &copy; 2021</p>
+
+   </footer>
+    
+   <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+    </script>
+
+
+
+</body>
 </html>
